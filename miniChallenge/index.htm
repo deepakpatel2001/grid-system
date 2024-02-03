@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            height: 100dvh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to right, green, cyan, pink);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 2px solid;
+            width: 40rem;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .mainData {
+            font-size: 3rem;
+        }
+
+        .btn {
+            padding: 1rem;
+            border: 2px solid;
+            border-radius: 0.5rem;
+            margin: 1rem;
+            text-transform: capitalize;
+        }
+
+        .dec {
+            background-color: rgba(255, 73, 73, 0.692);
+            font-weight: 700;
+        }
+
+        .inc {
+            background-color: rgba(112, 255, 73, 0.692);
+            font-weight: 700;
+        }
+
+        .allBtn {
+            display: inline;
+        }
+
+        input {
+            font-size: 2rem;
+            width: 10rem;
+            margin-bottom: 2rem;
+        }
+
+        .reset {
+            padding: 0 2rem;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-family: cursive;
+        }
+
+        .custom {
+            font-size: 2.2rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mainData">0</h1>
+        <div class="allBtn">
+            <button class="btn dec">decrement</button>
+            <button class="btn inc">increment</button>
+        </div>
+        <label for="custom" class="custom">Increment/Decrement by:</label>
+        <input type="number" name="custom" id="cstmVal">
+        <button class="reset">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

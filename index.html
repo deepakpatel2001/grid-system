@@ -17,6 +17,14 @@
         <div class="block div4">4</div>
         <div class="block div5">5</div>
     </div>
+
+    <script>
+        navigator.geolocation.
+        getCurrentPosition((data) => {
+            console.log(data.coords.latitude);
+            console.log(data.coords.altitude);
+        });
+    </script>
 </body>
 
 </html>
